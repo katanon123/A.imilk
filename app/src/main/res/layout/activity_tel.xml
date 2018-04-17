@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.restuarant.Tel"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/main_bunchoo">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="ครัวบุญชู"
+                android:id="@+id/name_textView1"
+                android:layout_gravity="top"
+                android:layout_margin="10dp"
+                android:textColor="@color/cardview_light_background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/tel_imageView"
+                android:src="@android:drawable/sym_def_app_icon"
+                android:layout_margin="5dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:src="@drawable/logo_bunchooo"
+                    android:id="@+id/imageView4"
+                    android:layout_gravity="center" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="ที่อยู่ : 356 ม.3 ถ.เสด็จ ต.มีชัย อ.เมือง จ.หนองคาย 43000 ทางไปสะพานมิตรภาพไทย - ลาว"
+                        android:id="@+id/name_textView"
+                        android:layout_weight="1"
+                        android:paddingStart="8dp"
+                        android:paddingTop="10dp"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/address_textView"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="000"
+                        android:id="@+id/tel_button"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="10dp"
+                        style="@style/btnStyBlue"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/textView23"
+                        android:layout_gravity="center_vertical"
+                        android:paddingTop="20dp"
+                        android:paddingStart="8dp"
+                        android:text="โทรศัพท์ : 042-420-024, 042-420-042"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/textView26"
+                        android:paddingTop="10dp"
+                        android:paddingStart="8dp"
+                        android:text="แผนที่ :"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/map_button"
+                        android:background="@drawable/google"
+                        android:layout_marginStart="100dp"
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="0.07"
+                        style="@style/btnStyBlue" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="detail"
+            android:id="@+id/detail_textView"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/id_textView"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lat_textView"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/long_textView"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+    <com.example.user.restuarant.AdjustableImageView
+        android:id="@+id/ColPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="3dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+            <TextView
+                android:id="@+id/ColImageID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ImageID"
+                android:visibility="gone" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+            <TextView
+                android:id="@+id/ColItemID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ItemID"
+                android:visibility="gone" />
+            
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

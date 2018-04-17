@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.user.restuarant.AdjustableImageView
+        android:id="@+id/user_fullimage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="30dp"
+        android:visibility="gone">
+    </com.example.user.restuarant.AdjustableImageView>
+
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/946_InnoFood.iml" filepath="$PROJECT_DIR$/946_InnoFood.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/org.apache.http/org.apache.http.iml" filepath="$PROJECT_DIR$/org.apache.http/org.apache.http.iml" />
+      <module fileurl="file://$PROJECT_DIR$/picasso-2.5.2x/picasso-2.5.2x.iml" filepath="$PROJECT_DIR$/picasso-2.5.2x/picasso-2.5.2x.iml" />
+    </modules>
+  </component>
+</project>

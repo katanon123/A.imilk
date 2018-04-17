@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bannerbg"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.example.user.restuarant.TextViewKitithada
+                    android:id="@+id/productdetail_name_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="3dp"
+                    android:text="ชื่อ"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ff7c24"
+                    android:textSize="40dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <com.example.user.restuarant.AdjustableImageView
+                android:id="@+id/productdetail_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <GridView
+                    android:id="@+id/productdetail_gridView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:numColumns="1"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Quantity_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/productdetail_Quantity_editText"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/productdetail_Quantity_editText"
+                    android:layout_toStartOf="@+id/productdetail_Quantity_editText"
+                    android:text="จำนวน:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/numproduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textSize="22dp"/>
+
+
+                <Button
+                    android:id="@+id/minus_button"
+                    style="@style/btnStyPink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="-"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/pust_button"
+                    style="@style/btnStyPink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="+"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="20dp"/>
+                <!--<NumberPicker-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="89dp"-->
+                <!--android:id="@+id/numberPicker"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:focusable="false" />-->
+                <!--<EditText-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:inputType="number"-->
+                <!--android:ems="10"-->
+                <!--android:id="@+id/productdetail_Quantity_editText"-->
+                <!--android:text="1"-->
+                <!--android:textSize="24dp"-->
+                <!--/>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/detail_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="รายละเอียด"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#cf7900"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <com.example.user.restuarant.TextViewKitithada
+                    android:id="@+id/productdetail_detail_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/productdetail_name_textView"
+                    android:layout_below="@+id/productdetail_name_textView"
+                    android:layout_marginLeft="15dp"
+                    android:text="Detail"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="24dp"
+                    android:textStyle="normal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pro_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="**Promotion price "
+                        android:textColor="#ff0000"
+                        android:visibility="gone"/>
+
+                    <com.example.user.restuarant.TextViewKitithada
+                        android:id="@+id/productdetail_price_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/productdetail_detail_textView"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="21dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Price"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000"
+                        android:textSize="30dp"/>
+
+                    <com.example.user.restuarant.TextViewKitithada
+                        android:id="@+id/bath_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="บาท"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/productdetail_addtoorder_button"
+                style="@style/btnStyYellow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/productdetail_detail_textView"
+                android:layout_below="@+id/productdetail_price_textView"
+
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="สั่งซื้อ"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

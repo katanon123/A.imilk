@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    >
+
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:id="@+id/scrollView7" >-->
+
+    <RelativeLayout
+        android:id="@+id/MyOrder_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/ticketAndcheckin_Linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bannerbg"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ticketId_Linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.example.user.restuarant.TextViewKitithada
+                        android:id="@+id/ticketId_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:text="รหัสการสั่ง"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+                    <com.example.user.restuarant.TextViewKitithada
+                        android:id="@+id/confrim_order_id_reserved_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView12"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:text="id"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#e50404"
+                        android:textSize="30dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/StandbyOrder_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="(รอรับรายการสั่งซื้อ)"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#e22652"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/AcceptedOrder_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="(รับรายการแล้ว)"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#288e05"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/checkin_datetime_Linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/confrim_order_id_reserved_textView"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.example.user.restuarant.TextViewKitithada
+                        android:id="@+id/date_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:text="วันที่ต้องการ:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+                    <com.example.user.restuarant.TextViewKitithada
+                        android:id="@+id/date_in_service_textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000"
+                        android:textSize="24dp"
+                        android:visibility="visible"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/textconfrim_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/showticket_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="กรุณาแสดงรหัสการสั่งซื้อนี้"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#FF3300"
+                        android:textSize="16dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/confrim_order_Confrim_button"
+                    style="@style/btnStyYellow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/confrim_order_cancel_button"
+                    android:layout_margin="5dp"
+                    android:layout_toEndOf="@+id/totalprice_textview"
+                    android:layout_toRightOf="@+id/totalprice_textview"
+                    android:layout_weight="1"
+                    android:text="ยืนยันรายการ"/>
+
+                <Button
+                    android:id="@+id/confrim_order_cancel_button"
+                    style="@style/btnStyPink"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/confrim_order_id_reserved_textView"
+                    android:layout_alignStart="@+id/confrim_order_id_reserved_textView"
+                    android:layout_below="@+id/confrim_order_select_date_to_button"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="ยกเลิกรายการ"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/ticketAndcheckin_Linear"
+            android:layout_marginBottom="60dp"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/confrim_order_listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ticketAndcheckin_Linear"
+                android:scrollbars="horizontal"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addr_button"
+            style="@style/btnStyPink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout7"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="5dp"
+            android:layout_weight="0.00"
+            android:text="สถานที่จัดส่ง"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="left"
+            android:layout_marginLeft="0dp"
+            android:baselineAligned="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/payment_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="0.00"
+                android:background="@drawable/btn_orange"
+                android:text="แจ้งการชำระเงิน"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/total_Linaer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <com.example.user.restuarant.TextViewKitithada
+                    android:id="@+id/totalprice_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="ราคารวม :"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <com.example.user.restuarant.TextViewKitithada
+                    android:id="@+id/Total_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:textSize="30dp"
+                    android:textStyle="bold"/>
+
+                <com.example.user.restuarant.TextViewKitithada
+                    android:id="@+id/bath_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="บาท"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <!--</ScrollView>-->
+
+
+</RelativeLayout>
+
+

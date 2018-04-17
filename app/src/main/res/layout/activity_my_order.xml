@@ -1,0 +1,237 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:padding="6dp"
+    >
+    <!-- A CardView that contains a TextView -->
+    <TextView
+        android:id="@+id/list_service_img_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:visibility="gone"/>
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="New Text"-->
+    <!--android:id="@+id/list_service_img_textView"-->
+    <!--android:visibility="gone" />-->
+
+    <!--</android.support.v7.widget.CardView>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:id="@+id/my_order_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/image_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/list_service_imageview"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="1dp"
+                    android:background="#ebebeb"
+                    android:src="@android:drawable/ic_menu_gallery"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/name_price_delete_Linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/name_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/myorder_Name_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="ชื่อ"
+                        android:textColor="#ff7c24"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/qty_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="จำนวน"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:id="@+id/Quantity_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="จำนวน"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/price_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/name_linear"
+                    android:layout_alignRight="@+id/name_linear"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/price_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="ราคา"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:id="@+id/pro_myorder_price_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/textView18"
+                        android:layout_alignTop="@+id/textView11"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="price"
+                        android:textColor="#ff0000"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/bath_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="บาท"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000"
+                        android:textSize="16dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/delete_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/price_linear"
+                    android:layout_toEndOf="@+id/myorder_number_textview"
+                    android:layout_toRightOf="@+id/myorder_number_textview"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Product_id_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ProductID"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/myorder_number_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="Price"
+                    android:textColor="#070000"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/list_servicr_Id_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:text="New Text"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/delete_imageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bin2"/>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/arrow_two"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</RelativeLayout>

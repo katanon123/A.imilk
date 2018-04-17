@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.example.user.restuarant.ChangePassWord"
+                android:background="@drawable/bg1">
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bannerbg"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout6"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            >
+
+            <com.example.user.restuarant.TextViewKitithada
+                android:id="@+id/oldpassword_textView"
+                android:layout_width="387dp"
+                android:layout_height="wrap_content"
+                android:text="รหัสผ่านเก่า"
+                android:textColor="#000000"
+                android:textSize="24sp"/>
+
+            <EditText
+                android:id="@+id/editoldpassword_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/oldpassword_textView"
+                android:backgroundTint="#12A9FA"
+                android:password="true"
+                android:textColor="#000000"/>
+
+            <com.example.user.restuarant.TextViewKitithada
+                android:id="@+id/newpasswordtextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/editoldpassword_textview"
+                android:text="รหัสผ่านใหม่"
+                android:textColor="#000000"
+                android:textSize="24sp"/>
+
+            <EditText
+                android:id="@+id/editNewPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/newpasswordtextView"
+                android:backgroundTint="#12A9FA"
+                android:password="true"
+                android:textColor="#000000"/>
+
+            <com.example.user.restuarant.TextViewKitithada
+                android:id="@+id/confirmnewpassword_textView"
+                android:layout_width="387dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/editNewPassword"
+                android:text="ยืนยันรหัสผ่านใหม่"
+                android:textColor="#000000"
+                android:textSize="24sp"/>
+
+            <EditText
+                android:id="@+id/editconfirmnewpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirmnewpassword_textView"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="#12A9FA"
+                android:password="true"
+                android:textColor="#000000"/>
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/changepassword_button"
+                    style="@style/btnStyPink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="0.5dp"
+                    android:text="เปลี่ยนรหัสผ่าน"
+                    android:textColor="#ffffff"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="เปลี่ยนรหัสผ่าน"-->
+    <!--android:id="@+id/changepassword_button"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginBottom="210dp"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:background="#8d6a45" />-->
+
+</RelativeLayout>

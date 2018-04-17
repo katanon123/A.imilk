@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">I MILK CAFE</string>
+    <string name="path_webservice">http://services.totiti.net/imilkWcf/Service1.svc/</string>
+    <string name="path_up_imgae">http://services.totiti.net/imilk/Image/android_upload_image.php</string>
+    <string name="path_imgae">http://services.totiti.net/imilk/Image/</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dateto">SELECT DATE</string>
+    <string name="your_string_here">This is an <u>underline</u>.</string>
+    <string name="imag">ListService</string>
+    <string name="aroow">ListService</string>
+    <string name="menu_refresh"/>
+    <string name="hint_search"/>
+    <string name="path_up_image">http://services.totiti.net/imilk/Image/android_upload_image.php</string>
+    <string name="path_webmore">http://services.totiti.net/imilk/</string>
+</resources>

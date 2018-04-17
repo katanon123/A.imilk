@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+
+              tools:context="com.example.user.restuarant.FragmentService"
+    android:background="@drawable/bg1">
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+    <!--<LinearLayout-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:weightSum="1">-->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/listmenu_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp"
+            android:orientation="vertical"
+            android:touchscreenBlocksFocus="false"
+            android:transitionGroup="true"
+            android:visibility="gone"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/logo_bunchooo"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="1">
+
+                <com.example.user.restuarant.TextViewKitithada
+                    android:id="@+id/datetime_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.96"
+                    android:text="date time"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#060000"
+
+                    android:textSize="24dp"/>
+
+                <com.example.user.restuarant.TextViewKitithada
+                    android:id="@+id/edit_time_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="แก้ไขวันที่"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#fb0000"
+                    android:textIsSelectable="false"
+                    android:textSize="20dp"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.example.user.restuarant.TextViewKitithada
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:autoText="false"
+                    android:background="#cccccc"
+                    android:padding="5dp"
+                    android:text="รายการอาหาร"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myoder_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/arrow_two"
+                        android:visibility="visible"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/myorder_service_imageview"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/ic_ordes"
+                            android:visibility="visible"/>
+
+                        <com.example.user.restuarant.TextViewKitithada
+                            android:id="@+id/myorder_service_textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:text="รายการสินค้า"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="#000000"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:visibility="visible"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.example.user.restuarant.TextViewKitithada
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/service_listView"
+                    android:layout_alignParentStart="true"
+                    android:autoText="false"
+                    android:background="#cccccc"
+                    android:padding="5dp"
+                    android:text="เมนู"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/newsLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imageView82"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="1"
+                                android:src="@drawable/arrow_two"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:orientation="horizontal">
+
+                                <com.example.user.restuarant.TextViewKitithada
+                                    android:id="@+id/beer_textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:text="เบียร์"
+                                    android:textColor="#000000"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold"/>
+
+                                <ImageView
+                                    android:id="@+id/L1_imageView"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="5dp"
+                                    android:visibility="gone"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/buffeLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imageView8"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="1"
+                                android:src="@drawable/arrow_two"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/L2_imageView"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="5dp"
+                                    android:visibility="gone"/>
+
+                                <com.example.user.restuarant.TextViewKitithada
+                                    android:id="@+id/Cider_textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:text="ไซเดอร์"
+                                    android:textColor="#000000"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/foodLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imageView8ค"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="1"
+                                android:src="@drawable/arrow_two"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/L3_imageView"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="5dp"
+                                    android:visibility="gone"/>
+
+                                <com.example.user.restuarant.TextViewKitithada
+                                    android:id="@+id/Wine_textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:text="ไวน์"
+                                    android:textColor="#000000"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/desestLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imageView89"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="1"
+                                android:src="@drawable/arrow_two"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/L4_imageView"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="5dp"
+                                    android:visibility="gone"/>
+
+                                <com.example.user.restuarant.TextViewKitithada
+                                    android:id="@+id/Tonicwater_textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:text="โทนิควอเตอร์"
+                                    android:textColor="#000000"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/galleryLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imageView84"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="1"
+                                android:src="@drawable/arrow_two"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/L5_imageView"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="5dp"
+                                    android:visibility="gone"/>
+
+                                <com.example.user.restuarant.TextViewKitithada
+                                    android:id="@+id/Bakery_textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:text="เบเกอร์รี่"
+                                    android:textColor="#000000"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/mapLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imageView893"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="1"
+                                android:src="@drawable/arrow_two"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <ImageView
+                                    android:id="@+id/L6_imageView"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="5dp"
+                                    android:visibility="gone"/>
+
+                                <com.example.user.restuarant.TextViewKitithada
+                                    android:id="@+id/Coffeebean_textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:text="เมล็ดกาแฟ"
+                                    android:textColor="#000000"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/commentLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imageView899"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_weight="1"
+                                android:src="@drawable/arrow_two"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:id="@+id/L7_imageView"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="5dp"
+                                    />
+
+                                <com.example.user.restuarant.TextViewKitithada
+                                    android:id="@+id/textView149"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:text="แสดงความคิดเห็น"
+                                    android:textColor="#000000"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/service_listView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="#d2cfcf"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/datetime_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textColor="#CCFF00"
+                    android:text="  เปิดบริการทุกวันเวลา 10.30 น. - 23.30 น." />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="300dp"
+                    android:layout_height="260dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/b1" />
+
+                <LinearLayout
+                    android:id="@+id/date_linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <com.example.user.restuarant.TextViewKitithada
+                            android:id="@+id/selectdate_fragementservice_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="เลือกวันเข้าใช้บริการ"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#000000"
+                            android:textSize="24dp"
+                            android:textStyle="bold"/>
+
+                        <LinearLayout
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/checkindate_fragementservice_button"
+                                style="@style/btnStyYellow"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="0.5dp"
+                                android:allowUndo="false"
+                                android:text="เลือกวัน"
+                                android:textColor="#ffffff"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/around_delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:transitionGroup="false"
+                    android:visibility="visible">
+
+                    <com.example.user.restuarant.TextViewKitithada
+                        android:id="@+id/around_delivery_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="เลือกเวลาเข้าใช้บริการ"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/time_fragmentservice_button"
+                            style="@style/btnStyYellow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="0.5dp"
+                            android:text="เลือกเวลา"
+                            android:textColor="#ffffff"
+                            android:visibility="visible" />
+
+                        <Button
+                            android:id="@+id/time2_fragmentservice_button"
+                            style="@style/btnStyleShakespeare"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="0.5dp"
+                            android:layout_weight="1"
+                            android:text="15.00-16.00"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+
+                    android:orientation="vertical"
+                    android:transitionGroup="false"
+                    android:visibility="gone">
+
+                    <com.example.user.restuarant.TextViewKitithada
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="จำนวนผู้เข้าใช้บริการ:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:visibility="visible"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/peopleeditText"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:background="#d7d7d7"
+                            android:gravity="center_vertical|center"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textColor="#010000"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ok_LinearLayout"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/ok_button"
+                        style="@style/btnStyPink"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="0.5dp"
+
+                        android:text="ตกลง"
+                        android:textColor="#ffffff"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/DateTimeOk_Linear"
+                    android:layout_width="387dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#6cffffff"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
